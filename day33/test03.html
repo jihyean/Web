@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>다양한 선택자_하위,자식선택자</title>
+
+<style type="text/css">
+/* 하위 선택자 */
+.box p {
+	color: red;
+}
+
+/* -- 자식 선택자 */
+.box > p {
+	color: red;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="box">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+		<ul>
+			<li><p>Duis aute irure dolor in reprehenderit in voluptate
+					velit esse cillum dolore eu fugiat nulla pariatur.</p></li>
+			<li><p class="txt">Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est
+					laborum.</p></li>
+		</ul>
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+		eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+</body>
+</html>

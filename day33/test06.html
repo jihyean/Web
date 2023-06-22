@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>블록 요소를 인라인 요소로 변경</title>
+
+<style type="text/css">
+	li{
+		list-style: none;
+	}
+	.gnb li {
+		display: inline;
+	}
+	.gnb li a {
+		display: inline-block;
+		background: lightblue;
+		color: red;
+		width: 150px;
+		text-align: center;
+		text-decoration: none;
+		height: 40px;
+		line-height: 40px;	
+	}
+	.gnb li a:hover {
+		background: brown;
+		text-decoration: underline;
+	}
+</style>
+
+</head>
+<body>
+
+<!-- 블록 요소이기 때문에 가로로 출력하기 쉽지 않음 -->
+	<ul class ="gnb">
+		<li><a href="https://www.naver.com/">전체상품 목록 보기</a></li>
+		<li><a href="https://mail.naver.com/">신상품 목록 보기</a></li>
+		<li><a href="https://section.cafe.naver.com/">BEST 목록 보기</a></li>
+		<li><a href="https://github.com/jihyean?tab=repositories">고객센터 문의하기</a></li>
+	</ul>
+
+
+</body>
+</html>

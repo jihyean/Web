@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	a {
+		color: lightblue;
+	}
+	/* :으로 붙는 것 "가상클래스" */
+	a:hover {
+		color: red;
+	}
+
+	a:before {
+		content: "▶";
+	}
+
+	ul:after {
+		content: "이용해주셔서 감사합니다";
+	}
+
+</style>
+
+</head>
+<body>
+
+	<ul>
+		<li><a href="https://www.naver.com/">전체상품 목록 보기</a></li>
+		<li><a href="https://mail.naver.com/">신상품 목록 보기</a></li>
+		<li><a href="https://section.cafe.naver.com/">BEST 목록 보기</a></li>
+		<li><a href="https://github.com/jihyean?tab=repositories">고객센터 문의하기</a></li>
+	</ul>
+
+</body>
+</html>
