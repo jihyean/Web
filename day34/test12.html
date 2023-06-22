@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Math.floor(Math.random() * 랜덤 숫자개수)+처음 시작하는 수;
+		var randNum = Math.floor(Math.random() * 100) + 1;
+		var count = 0;
+
+		while (true) {
+			count++;
+			var input = prompt('1~100 사이의 정수를 입력해주세요.')
+
+			if (randNum == input) {
+				break;
+			}
+			else if(randNum > input) {
+				alert("UP")
+			}
+			else{
+				alert("DOWN")	
+			}
+		}
+		alert(count + "번만에 맞추셨습니다")
+	</script>
+
+</body>
+</html>

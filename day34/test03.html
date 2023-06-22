@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자료형</title>
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+	var str = "문자열";
+	var num = 15; // 가변길이
+	var flag = true;
+	var arr = [1,2,3];
+	
+	console.log('str: '+str);
+	console.log('num: '+num);
+	console.log('flag: '+flag);
+	console.log('arr: '+arr);
+	
+	
+	console.log('');
+	
+	// 오류가 나지 않으며 1100으로 출력
+	var x = 1+'100';
+	console.log(x);
+	
+	// 오류가 나지 않으며 12로 출력
+	var y = true+11;
+	console.log(y);
+	
+	var a = null;
+	var b;
+	//var c;
+	console.log('a: ' +a); // null
+	console.log('b: ' +b); // undefined ---> 값이 지정되지 않음
+	//console.log('c: ' +c); // Uncaught ReferenceError: c is not defined ---> ???몰루 선언ㄴㄴ
+	
+	console.log(10/0); 			//Infinity
+	console.log(2*'apple'); 	//NaN
+	console.log(isNaN(113)); 	//false
+	console.log(isNaN('113')); 	//false ---> 숫자로 인식
+	console.log(isNaN(banana)); //true
+	
+	
+	 
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	#test {
+		cursor: pointer;
+	}
+	
+</style>
+
+</head>
+<body>
+
+	<img id='test' alt ="클릭하면 바뀌는 이미지" src="test2.jpg">
+	
+	<!-- 문서의 어떠한 요소를 선택(클릭)하면 함수를 작동시킬거야 -->
+	<!-- 무명 함수 -->
+	<script type="text/javascript">
+		document.querySelector('#test').onclick=function(){
+			this.src='test3.png';
+		};
+	</script>
+
+</body>
+</html>

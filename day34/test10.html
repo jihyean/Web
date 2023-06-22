@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>실습01</title>
+
+<style type="text/css">
+div {
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+</style>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		function changeColor(obj) {
+			var colorDatas2 = [ 'Tomato', 'Goldenrod', 'BlueViolet', 'DodGerBlue', 'MediumSeaGreen' ];
+			console.log(obj);
+			obj.style.backgroundColor = colorDatas2[i];
+
+		}
+		
+		var i;
+
+		var colorDatas = [ 'MediumSeaGreen', 'DodGerBlue', 'BlueViolet', 'Goldenrod', 'Tomato' ];
+		//var colorDatas2 = [ 'Tomato', 'Goldenrod', 'BlueViolet', 'DodGerBlue', 'MediumSeaGreen' ];
+		
+		//console.log(colorDatas[2]);
+		
+		for (i = 0; i < colorDatas.length; i++) {
+			var elem = '<div id="one" onclick="changeColor(this)" style = "background-color:'
+					+ colorDatas[i] + '">' + colorDatas[i] + '</div>';
+					document.write(elem);
+		}
+	</script>
+
+
+'<div id="one" onclick=changeColor(this) style = "background-color: colorDatas2[i];">' colorDatas[i]</div>
+
+</body>
+</html>

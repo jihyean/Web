@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	#box {
+		width: 100px;
+		height: 100px;
+		background-color: coral;
+		cursor: pointer
+	}
+	
+</style>
+
+<script type="text/javascript">
+	// 누른 요소의 스타일 속성 중 배경색을 녹색을 바꿔줘
+	function changeColor(obj){
+		obj.style.backgroundColor = 'green';
+	}
+
+</script>
+
+</head>
+<body>
+
+<!-- 이벤트 연결 방식 -->
+<div id="box" onClick ="changeColor(this)"></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1 id ='header'></h1>
+
+	<script type="text/javascript">
+		// 일반적인 방식
+		function printInfo(str){
+			if (str == 'admin') {
+				document.querySelector('#header').append('관리자 페이지입니다.')
+			} else {
+				document.querySelector('#header').append('환영합니다. ' + str + '님')
+			}
+		}
+		
+		function printInfo2(str) {
+			if (str == 'admin') {
+				document.write('관리자 페이지입니다.')
+			} else {
+				document.write('환영합니다. ' + str + '님')
+			}
+		}
+		
+
+		var input = prompt('아이디를 입력해주세요.')	
+		printInfo(input);
+		
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
