@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="#" name="loginForm">
+		<table border="1">
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" class="login" name = "memberId" placeholder="5자 이상"
+					required></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" class="login" name = "passwd" placeholder="10자 이상"
+					required></td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input type="submit" value="데이터전송"></td>
+			</tr>
+		</table>
+	</form>
+
+
+	<script type="text/javascript">
+		var elem = document.forms.loginForm;
+		// var elem = document.forms['loginForm'];
+		
+		elem.onsubmit = function(){
+			if(this.memberId.value.length < 5) {
+				alert('아이디는 5자 이상이어야 합니다');
+				this.memberId.focus();
+				return false;
+			}
+			if(this.passwd.value.length < 10) {
+				alert('비밀번호는 10자 이상이어야 합니다');
+				this.passwd.focus();
+				return false;
+			}
+		}
+
+		var arr = document.querySelectorAll('.login');
+		for (var i = 0; i < arr.length; i++) {
+
+			arr[i].onfocus = function() {
+				this.style.backgroundColor = 'lightblue';
+			}
+
+			arr[i].onblur = function() {
+				this.style.backgroundColor = 'white';
+			}
+
+		}
+	</script>
+
+</body>
+</html>

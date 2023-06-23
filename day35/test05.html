@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	#wrap {
+		display:flex;
+	}
+
+	#wrap > div {
+		width: 400px;
+		height: 400px;
+		margin: 10px;
+		cursor: pointer;
+	}
+
+	#box {
+		background-color: lightblue;
+		animation: blink-effect 0.5s step-end infinite;
+	}
+	#box2 {
+		background-color: lightgreen;
+		animation: vibration 0.1s infinite;  
+	}
+	
+	.click {
+		/* 클릭 이벤트를 통해
+		클래스명이 click이된 요소가 있다면*/
+		background-color: lightpink !important;
+	}
+	
+	.onmouseover {
+		border-radius : 50%;
+	}
+	
+	@keyframes blink-effect {
+  		50% {
+    		opacity: 0;
+  		}
+	}
+	
+	@keyframes vibration {
+  		from {
+    		transform: rotate(1deg);
+  		}
+  		to {
+    		transform: rotate(-50deg);
+  		}
+	}
+
+
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	document.querySelector('#box').onclick=test;
+	document.querySelector('#box2').onclick=test;
+	
+	
+	function test() {
+		if(this.className == 'click'){
+			this.className='';
+		}
+		else{
+			this.className='click';
+		}
+	}
+
+	function test1(obj){
+		//obj.style.backgroundColor = 'lightpink';
+		
+		if(this.className == 'click'){
+			this.className='';
+		}
+		else{
+			this.className='click';
+		}
+		
+	}
+	
+	function test2(obj){
+		//obj.style.borderRadius = '50%';
+		
+		if(this.className == 'onmouseover'){
+			this.className='';
+		}
+		else{
+			this.className='onmouseover';
+		}
+	}
+
+	
+	
+</script>
+
+<div id='wrap'>
+<div id="box" onclick="test1(this)"></div>
+<div id="box2" onmouseover="test2(this)"></div>
+</div>
+
+
+
+</body>
+</html>

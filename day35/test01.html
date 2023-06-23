@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>키보드 입력 이벤트</title>
+<style type="text/css">
+	input {
+		border: 5px solid black;
+	}
+
+</style>
+
+
+</head>
+<body>
+
+	<input type="text" onkeydown="test(event)" placeholder="keydown 이벤트"> 
+	
+<script type="text/javascript">
+	function test(event){
+		console.log(event.keyCode);
+		if(event.keyCode == 13){
+			
+			//event.target.value == input 박스에 있는 값
+			console.log(event.target.value); // 상대적으로 느림(스레드)
+			alert(event.target.value);
+		}
+	}
+
+</script>
+	
+
+</body>
+</html>
