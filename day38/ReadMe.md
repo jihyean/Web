@@ -21,7 +21,5 @@
 추가 완료시 test10.jsp로 이동
 
 
-//
-뷰는 PK를 잘 주는 것이 중요
-//
-컨트롤러는 selectOne
+//뷰는 PK를 잘 주는 것이 중요<br>
+//컨트롤러는 selectOne<br>
