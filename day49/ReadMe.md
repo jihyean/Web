@@ -5,7 +5,7 @@
 게시글들을 보여주는 공간
 	-> 댓글 작성할수있는 공간
 		
-[더보기] : 페이지네이션
+# [더보기] : 페이지네이션
 
 if(count == null || count.isEmpty() || count.isBlank() || count.equals("")) {
 	count = "2";
